@@ -3,7 +3,7 @@ function love.load(args)
     local json = require "json"
 
     -- VARIABLES --
-    configFile = love.filesystem.read("example.json")
+    configFile = love.filesystem.read("config.json")
     configData = json.decode(configFile)
     -- Statically Generated Info
     categories = {}
